@@ -1,0 +1,33 @@
+body{
+    background-color: bisque;
+    text-align: center;
+}
+
+div{
+    background-color: yellowgreen;
+    padding: 10px;
+    margin: 10px;
+}
+
+.div1{
+    animation: anim1 3s 2s alternate ease-in-out;
+    animation-iteration-count: 3;
+}
+.div1:hover{
+    transition: 3s;
+    background-color: red;
+    color: yellow;
+    border-radius: 20px;
+}
+
+@keyframes anim1 { 
+    from{
+        height: 200px;
+        width: 200px;
+        background-color: tomato;
+    }
+    to{
+        height: 300px;
+        width: 400px;
+        background-color: blue;
+    }
